@@ -1,0 +1,140 @@
+<div>
+  <!--div class=image1>
+    
+  </div>-->
+  <div class=image2 alt="Find your abode...">
+    
+    </div>
+
+  <!--<div class="h4">
+      <h4 style="color:blueviolet">Find your abode...!</h4></div>
+      <div class="searchMenu">
+        <input type="text" class="searchBox">
+        <div class="buttonplace">
+        <button class="button" value="NEWEST">NEWEST</button>
+    </div>
+    </div>-->
+    <div class="row">
+      <div class=" column1">
+        <div class="bar">
+           BEDS</div>
+          <br>
+          <div class="radiobutton place" *ngFor="let entry of bedlist">
+            <label><input type="radio" name="radiogroup" 
+                  [checked]="idx === 0" 
+                  [value]="entry.id" 
+                  (change)="onSelectionChange(entry)">{{entry.value}}</label>
+          </div>
+          <!--<div class="checkbox" *ngFor="let list of xyzlist">
+            <label>
+              <input formControlName="interestSectors" type="checkbox" value="{{list.id}}" (change)="onCheckboxChange(list,$event)">{{list.value}}</label>
+          </div>-->
+       
+         <!-- <input type="radio" name="bedrooms" [value]="1">1 BHK
+          &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="bedrooms" [value]="2">2 BHK
+          &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="bedrooms" [value]="2">3 BHK
+          &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="bedrooms" [value]="2">4 BHK
+          &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="bedrooms" [value]="2">5 BHK & ABOVE-->
+          <br>
+          <br>
+         <div class="bar">
+           HOME TYPE
+           <br>
+           <br>
+          <!-- <div class="checkbox place" *ngFor="let list of hometype">
+            <label>
+              <input formControlName="homes" type="checkbox" value="{{list.id}}" (change)="onCheckboxChange(list,$event)">{{list.value}}</label>
+          </div>-->
+          <div class="radiobutton place" *ngFor="let entry of hometype">
+            <label><input type="radio" name="radiogroup1" 
+                  [checked]="idx === 0" 
+                  [value]="entry.id" 
+                  (change)="onSelectionChange_hometype(entry)">{{entry.value}}</label>
+          </div>
+           <!--<input type="checkbox" name="type" [value]=houses> HOUSES
+           &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="bedrooms" [value]="2">APARTMENTS
+           &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="bedrooms" [value]="2">CONDOS
+           &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="bedrooms" [value]="2">TOWNHOMES-->
+           <br>
+           <br>
+           <div class="bar">
+            PRICE LISTINGS
+                 
+           </div>
+           <br>
+           <!--<div class="slidecontainer">
+             50,000$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;600000+
+             <br>
+              <input type="range" min="50,000" max="100" value="600,000" class="slider" id="myRange" ngModel="amount">
+            </div>-->
+            <div class="place">
+              <label>Minimum</label>
+              <select [(ngModel)]="selectedEntry_minprice" (ngModelChange)='onSelectionChange_pricemin($event)'>
+                <option *ngFor="let min of price_min" [value]="min.value">
+                  {{min.value}}
+                </option>
+              </select>
+              <label>Maximum</label>
+              <select [(ngModel)]="selectedEntry_maxprice" (ngModelChange)='onSelectionChange_pricemax($event)'>
+                <option *ngFor="let max of price_max" [value]="max.value">
+                  {{max.value}}
+                </option>
+              </select>
+            </div>
+            <br>
+            <div class="place">Price Amount Range: {{"("+selectedEntry_minprice+") K - ("+selectedEntry_maxprice+") K"}}</div>
+             <br>
+             <br>
+             <div class="bar">
+                LOCATION
+              </div>
+              <br>
+              <div class="place"><input type="text" placeholder="enter address or zip" id="location" [(ngModel)] = "location_value"></div>
+              <br>
+              <br>
+              <div class="bar">
+                  ADDITIONAL FILTERS
+                </div>
+                <br>
+                <div class="place">
+                    <label>BATH</label>
+                    <select [(ngModel)]="selectedEntry_bath" (ngModelChange)='onSelectionChange_bath($event)'>
+                      <option *ngFor="let bath of bathlist" [value]="bath.value">
+                        {{bath.value}}
+                      </option>
+                    </select>&nbsp;&nbsp;
+                    SQT FEET<input class="inputtext" type="text" placeholder="Min">&nbsp;&nbsp;<input class="inputtext" type="text" placeholder="Max">
+               
+              <button class="button place"  (click)="getdata(selectedEntry_hometype,selectedEntry_beds)"><span>SEARCH </span></button>
+              <button (click)="openloginModal()">click</button>
+            </div>
+         </div>
+           
+
+      </div>
+      <div class="column1">
+        <div class="searchMenu"> {{location_value}} Real Estate <br> {{filteredApartments.length}} Homes found</div>
+        <div *ngFor="let ap of filteredApartments" >
+            <!--<img src="{{ap.user_name}}" id="img">-->
+            <div class="dropdownLayout">{{ap.user_name}}</div>
+           </div>
+      </div>
+    </div>
+   
+     <!--<div *ngFor="let ap of apartments">
+       <img src="{{ap.imgsrc}}" id="img">
+      </div>
+      <div >
+       <img src="{{ap.imgsrc}}" id="img">
+       {{ap.user_name}}
+      </div>-->
+      <!--<div *ngFor="let ap of filteredApartments" >
+        <img src="{{ap.user_name}}" id="img">
+        <div>{{ap.user_name}}</div>
+       </div>-->
+       
+</div>
+
+
+
+

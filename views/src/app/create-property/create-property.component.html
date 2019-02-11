@@ -1,0 +1,95 @@
+<div id="allcontent">
+    <!-- <h2>Add new property...</h2> -->
+    <p id="title">Add New Property...</p>
+  <div id="image_inputs">
+    <div id="image_preview">
+  
+    </div>
+   
+    <label for="img_ip">Add Images : 
+      <img src="../../assets/icons8-plus-96.png" alt="Add_img" id="plus_img" style="width:64px; height:64px;" (click)="addImage($event)">
+      <input type="file" name="img_ip" id="multi_img_ip" accept=".jpg, .jpeg, .png" multiple></label>
+      <p class="preview"></p>
+  </div>
+  
+  <div id="address">
+    <h3>Address..</h3>
+      <div class="form-group">
+          <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+        <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+            <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+          </agm-map>
+        </div><!--  
+     --><div id="address-fields">
+        <p id="error">Address field blank</p>
+        <label for="apt_num"> Apartment Number : 
+          <input class="slimField" id="apt_num" name="apartmentNumber"></label><br>
+        <label for="street_number"> Street Number :<br>
+        <input class="slimField" id="street_number" name="street"></label>  
+        <!-- <label for="route">Route : -->
+        <input class="widefield" id="route" name="locality">   <!--</label>--> <br>
+        <label for="locality"> City :
+        <input class="field" id="locality" name="city"></label><br>
+        <label for="administrative_area_level_1">State : 
+            <input class="field" id="administrative_area_level_1" name="state">
+        </label>
+        <label for="postal_code">Zip Code: <input class="slimField" id="postal_code" name="zipcode"></label>
+        <label for="country">Country : <input class="field" id="country" name="country"></label>
+      </div>
+  </div>
+  <br>
+  <div id="propinfo">
+    <div id="hometype" class="sbs">
+      <h3>Home Type</h3>
+        <label for="house">
+            <input type="radio" id="house" name="type" checked="checked" value="house"> House
+          </label>
+          <label for="aprt">
+              <input type="radio" id="aprt" name="type" value="aprt"> Apartment
+            </label>
+            <label for="townhome">
+                <input type="radio" id="townhome" name="type" value="townhome"> Town Home
+              </label>
+              <label for="condos">
+                  <input type="radio" id="condos" name="type" value="condos"> Condos
+                </label>
+    </div><!--
+    --><div id="bedroom" class="sbs">
+        <h3>Bedroom</h3>
+        <label for="1bhk">
+            <input type="radio" id="1bhk" name="bed" checked="checked" value="1bhk"> 1BHK
+          </label> &nbsp;
+          <label for="2bhk">
+            <input type="radio" id="2bhk" name="bed" value="2bhk"> 2BHK
+          </label> &nbsp;
+          <label for="3bhk">
+              <input type="radio" id="3bhk" name="bed" value="3bhk"> 3BHK
+            </label> &nbsp;
+          <label for="4bhk">
+            <input type="radio" id="4bhk" name="bed" value="4bhk"> 4BHK
+          </label> &nbsp;
+          <label for="5bhk">
+              <input type="radio" id="5bhk" name="bedroom" value="5bhk"> 5BHK &amp; Above
+            </label> &nbsp;   
+    </div>
+    <br>
+    <div class="sbs">
+      <h3>Put up property for </h3>
+      <label for="buy">
+          <input type="radio" id="buy" name="category" checked="checked" value="sell"> Buying
+        </label> &nbsp;
+        <label for="rent">
+            <input type="radio" id="rent" name="category" value="rent"> Rent
+          </label> &nbsp;
+    </div><!--
+  --><div class="sbs">
+    <label for="price">
+    <h4>Price: $</h4><input type="number" id="price" name="price"  min="1">
+    </label>
+    </div>
+  </div>
+  
+  
+  <button (click)="uploadData($event)">Save data</button>
+  </div>
+  

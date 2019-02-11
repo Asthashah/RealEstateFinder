@@ -1,0 +1,213 @@
+@import '~bootstrap/dist/css/bootstrap.min.css'; 
+
+.searchMenu{
+   background-color: rgb(197, 156, 236);
+   height: 40px;
+   width: 100%;
+   outline-style: solid;
+   outline-color: rgb(170, 165, 165);
+  
+
+}
+
+.searchBox{
+
+    float: none;
+    margin-top: 4px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.dropdownLayout{
+  
+    width: 100%;
+    height: 100px;
+    
+   /* border-color: rgb(77, 74, 74);
+    border-style: groove;
+   margin: 0 auto; */
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+
+   /* margin: 50px 50px 20px 50px;
+    margin-top: 15px; 
+     margin-left: 5px;
+     margin-right: 55px; 
+      margin-bottom: 0px; */
+}
+
+.h4{
+
+    margin-left: 10px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* background-image: url('images/3.jpg');
+   /* height: 20px;
+    width: 100px;*/
+    /*background-image: url('images/1.jpg')*/
+
+    
+}
+
+/*.headerimage{
+  
+    background-image: url('images/1.jpg')
+}*/
+.bar{
+    width: 100%;
+    height: 30px;
+    margin-left: 0px;
+    background-color:  rgb(167, 168, 233);
+
+}
+.hometype{
+    
+    width: 100%;
+    height: 30px;
+    margin-left: 0px;
+    background-color: rgb(122, 123, 216);
+
+}
+.buttonplace{
+    height: 40px;
+    width: 150px;
+    margin-left: 60%;
+    margin-top: -25px;
+    float: none;
+    
+}
+
+.button{
+    background-color:  rgb(152, 154, 236);
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+/* slider component
+*/
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    margin-left: 20px;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: rgb(207, 182, 207);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: rgb(175, 34, 156);
+    cursor: pointer;
+}
+
+/*image*/
+.image1{
+
+    width: 100%;
+    height: 100px;
+    background-image: url('images/skyline.jpg');
+}
+.image2{
+
+    width: 100%;
+    height: 150px;
+    background-image: url('images/skyline.jpg');
+}
+
+/* button*/
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(122, 123, 216);
+    border: none;
+    color: #FFFFFF;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 150px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 30%
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600PX;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+
+}
+.place{
+
+
+    display:inline-block;
+    margin-left: 20px;
+  
+}
+
+.inputtext{
+
+    width:60px;
+}
+.modal-xl {
+    max-width: 1000px;
+  }

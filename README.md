@@ -16,15 +16,24 @@ Prerequisites: MongoDB Node Express Angular
 
 Screenshots:
 
-
+Homepage:
 ![MainPage](https://user-images.githubusercontent.com/35386795/59484345-5617e080-8e3f-11e9-86a0-c648a5039662.png)
 
 
 ![hotelListiing](https://user-images.githubusercontent.com/35386795/59484447-d0e0fb80-8e3f-11e9-8d55-9e1589e6478b.png)
 
-
+Search Page:
 ![searchHotel](https://user-images.githubusercontent.com/35386795/59484450-d3dbec00-8e3f-11e9-8557-a0e5869084c0.png)
 
 
 ![hotelListing](https://user-images.githubusercontent.com/35386795/59484453-d6d6dc80-8e3f-11e9-90b6-912fd71e183d.png)
+Add Properties Page
 ![map](https://user-images.githubusercontent.com/35386795/59484454-d9393680-8e3f-11e9-9b10-d14c526ac285.png)
+
+Installation process: install angular install express install @agm/core install multer install passport install bcrypt
+
+For running the website: start mongodb and connect to the database using node.js
+
+For starting the server : run - > node index.js
+
+Authors: Siddhesh Kuvalekar Astha Shah Ramyasri Sneha Pai

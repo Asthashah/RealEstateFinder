@@ -1,7 +1,3 @@
-# final-project-designer-ninjas
-final-project-designer-ninjas created by GitHub Classroom
-
-
 FindAPlace.com
 
 It a Real Estate website which has a wide range of scope for the customer to find a place.
@@ -19,13 +15,13 @@ Screenshots:
 Homepage:
 ![MainPage](https://user-images.githubusercontent.com/35386795/59484345-5617e080-8e3f-11e9-86a0-c648a5039662.png)
 
-
+Search Results:
 ![hotelListiing](https://user-images.githubusercontent.com/35386795/59484447-d0e0fb80-8e3f-11e9-8d55-9e1589e6478b.png)
 
 Search Page:
 ![searchHotel](https://user-images.githubusercontent.com/35386795/59484450-d3dbec00-8e3f-11e9-8557-a0e5869084c0.png)
 
-
+Add Property:
 ![hotelListing](https://user-images.githubusercontent.com/35386795/59484453-d6d6dc80-8e3f-11e9-90b6-912fd71e183d.png)
 Add Properties Page
 ![map](https://user-images.githubusercontent.com/35386795/59484454-d9393680-8e3f-11e9-9b10-d14c526ac285.png)

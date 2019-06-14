@@ -9,7 +9,7 @@ Seller will be able to login and post their owned properties for sell or rent on
 Getting Started These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 Prerequisites: MongoDB Node Express Angular
-
+ 
 Screenshots:
 
 Homepage:
@@ -32,4 +32,4 @@ For running the website: start mongodb and connect to the database using node.js
 
 For starting the server : run - > node index.js
 
-Authors: Siddhesh Kuvalekar Astha Shah Ramyasri Sneha Pai
+Authors: Astha Shah Siddhesh Kuvalekar Sneha Pai Ramyasri
